@@ -1,0 +1,78 @@
+body,
+p {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #ffffff;
+}
+
+ul li {
+  padding: 5px;
+}
+
+h2 {
+  margin: 0;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.section-animals,
+.section-birds,
+.section-insects {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.section-animals {
+  background-image: url('http://superwall.us/wallpaper/red_panda_forest_wildlife_bear_animals-vzer.jpg');
+  background-color: green;
+}
+
+.section-birds {
+  background-image: url('http://hdwallpaperg.com/wp-content/uploads/2014/02/Beautiful-Wallpapers-Blue-Bird.jpg');
+  background-color: blue;
+}
+
+.section-insects {
+  background-image: url('http://2083711.sites.myregisteredsite.com/data/Insects-Butterflies-Monarch-01.jpg');
+  background-color: yellow;
+}
+
+@media screen and (min-width: 700px) {
+ ul li {
+  display: inline-block;
+ }
+}
