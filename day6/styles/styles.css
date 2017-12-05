@@ -1,0 +1,75 @@
+h1 {
+  font-family: 'DroidSerif', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../fonts/DroidSerif-Italic.ttf');
+  font-family: 'DroidSerif';
+  font-style: italic;
+  font-weight: 400;
+}
+
+.btn {
+  background-color: #fed136;
+  color: #ffffff;
+  border-radius: 2px;
+  min-width: 240px;
+  height: 65px;
+  padding: 25px 50px;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: all 1s;
+  /*background: linear-gradient(45deg, #1e5799 0%, #24e548 54%, #7db9e8 100%);*/
+}
+
+.btn:hover {
+  color: red;
+  background-color: grey;
+}
+
+[type="button"] {
+  color: red;
+}
+
+[value*="more"] {
+  color: green;
+  /*background: radial-gradient(ellipse at center, #1e5799 0%, #24e548 54%, #7db9e8 100%);*/
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+.form-checkbox {
+  padding-left: 30px;
+}
+
+.form-checkbox label:before {
+  content: '';
+  border: 1px solid #454646;
+  width: 15px;
+  height: 15px;
+  background-color: #eeeeee;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input:checked + label:before {
+  border: 1px solid red;
+}
