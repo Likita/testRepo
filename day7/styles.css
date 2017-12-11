@@ -1,0 +1,44 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+  background-image: url('https://wallinsider.com/wp-content/uploads/2017/09/Cat-HD-Wallpapers-Download-8.jpg');
+  background-size: cover;
+  background-position: right top;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.avatar:hover {
+  transform: rotate(360deg) scale(2);
+}
+
+.active {
+  animation: move 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+  }
+
+  30% {
+    left: 200px;
+    top: 0;
+    border: 3px solid red;
+  }
+
+  60% {
+    top: 200px;
+    left: 200px;
+    background-color: green;
+  }
+
+  100% {
+    left: 0;
+    top: 200px;
+    border-radius: 30%;
+  }
+}
